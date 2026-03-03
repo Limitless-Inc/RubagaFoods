@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RubagaFoods - Your Local Food Experience</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo">RubagaFoods</div>
+            <ul class="nav-links">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#truck">Food Truck</a></li>
+                <li><a href="#coffee">Coffee</a></li>
+                <li><a href="#pork">Pork Joint</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact" class="btn-nav">Order Now</a></li>
+            </ul>
+            <button class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="line">Get the Rubaga</span>
+                <span class="line">Food Experience now</span>
+            </h1>
+            <p class="hero-subtitle">We have the best coffee, pork and most reliable food truck in town.</p>
+            <div class="hero-cta">
+                <a href="#menu" class="btn btn-primary">Explore Menu</a>
+                <a href="#contact" class="btn btn-secondary">Order Now</a>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="section-title">Our Menu</h2>
+            <div class="menu-grid">
+                <div class="menu-card" data-category="truck">
+                    <div class="menu-icon">🚚</div>
+                    <h3>Food Truck</h3>
+                    <p>Mobile gourmet experience bringing flavors to your neighborhood</p>
+                    <a href="#truck" class="menu-link">Discover →</a>
+                </div>
+                <div class="menu-card" data-category="coffee">
+                    <div class="menu-icon">☕</div>
+                    <h3>Coffee Bar</h3>
+                    <p>Artisan roasted beans crafted into perfection</p>
+                    <a href="#coffee" class="menu-link">Discover →</a>
+                </div>
+                <div class="menu-card" data-category="pork">
+                    <div class="menu-icon">🥓</div>
+                    <h3>Pork Joint</h3>
+                    <p>Slow-cooked, tender, and bursting with flavor</p>
+                    <a href="#pork" class="menu-link">Discover →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="truck" class="truck">
+        <div class="container">
+            <div class="split-layout">
+                <div class="split-content">
+                    <span class="label">Mobile Kitchen</span>
+                    <h2>Food on Wheels</h2>
+                    <p>Our food truck brings restaurant-quality meals to events, festivals, and street corners. Track us in real-time and never miss out.</p>
+                    <div class="features">
+                        <div class="feature-item">
+                            <span class="feature-icon">📍</span>
+                            <div>
+                                <h4>Live Locations</h4>
+                                <p>Real-time GPS tracking</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">🎉</span>
+                            <div>
+                                <h4>Private Events</h4>
+                                <p>Book us for your occasion</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">Book the Truck</a>
+                </div>
+                <div class="split-visual">
+                    <div class="visual-card">
+                        <h4>This Week's Schedule</h4>
+                        <ul class="schedule">
+                            <li><strong>Mon-Wed</strong> Jinja Rubaga Plaza, 11AM-3PM</li>
+                            <li><strong>Thu-Fri</strong> Tech Park, 12PM-4PM</li>
+                            <li><strong>Sat</strong> Farmers Market, 9AM-2PM</li>
+                            <li><strong>Sun</strong> Riverside Festival, 10AM-6PM</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coffee" class="coffee">
+        <div class="container">
+            <div class="split-layout reverse">
+                <div class="split-visual coffee-visual">
+                    <div class="coffee-stats">
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Arabica Beans</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">12+</span>
+                            <span class="stat-label">Brew Methods</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5★</span>
+                            <span class="stat-label">Rated Coffee</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="split-content">
+                    <span class="label">Artisan Roasted</span>
+                    <h2>Coffee That Tells a Story</h2>
+                    <p>From bean to cup, every sip is a journey. We source ethically, roast meticulously, and serve with passion. Our baristas are craftsmen, and coffee is their canvas.</p>
+                    <div class="coffee-menu">
+                        <div class="coffee-item">
+                            <span>Espresso</span>
+                            <span class="price">UGX 5,500</span>
+                        </div>
+                        <div class="coffee-item">
+                            <span>Cappuccino</span>
+                            <span class="price">UGX 6,500</span>
+                        </div>
+                        <div class="coffee-item">
+                            <span>Cold Brew</span>
+                            <span class="price">UGX 7,000</span>
+                        </div>
+                        <div class="coffee-item">
+                            <span>Signature Blend</span>
+                            <span class="price">UGX 6,000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pork" class="pork">
+        <div class="pork-hero">
+            <div class="container">
+                <div class="pork-content">
+                    <span class="label">Slow Cooked Perfection</span>
+                    <h2>Find Our Pork Joint</h2>
+                    <p>Tender, juicy, and packed with flavor. Our signature pork dishes<br> are slow-cooked for hours, all in the great city of Rubaga.</p>
+                </div>
+            </div>
+        </div>
+        <div id="map" class="pork-map"></div>
+        <div class="container">
+            <div class="pork-menu-grid">
+                <div class="pork-item">
+                    <h3>Pulled Pork Sandwich</h3>
+                    <p>14-hour smoked shoulder, house BBQ sauce</p>
+                    <span class="price">UGX 17,000</span>
+                </div>
+                <div class="pork-item">
+                    <h3>Pork Belly Bites</h3>
+                    <p>Crispy glazed cubes with chili mayo</p>
+                    <span class="price">UGX 10,990</span>
+                </div>
+                <div class="pork-item">
+                    <h3>Ribs Platter</h3>
+                    <p>Fall-off-the-bone St. Louis style</p>
+                    <span class="price">UGX 18,990</span>
+                </div>
+                <div class="pork-item">
+                    <h3>Pork Tacos</h3>
+                    <p>Carnitas with fresh salsa & lime</p>
+                    <span class="price">UGX 9,990</span>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <h2 class="section-title">Our Story</h2>
+                <p class="about-text">RubagaFoods started as a dream to bring premium street food to the masses. What began as a single food truck has evolved into a culinary movement—combining mobile cuisine, artisan coffee culture, and authentic pork mastery.</p>
+                <p class="about-text">We believe food should be an experience, not just a meal. Every dish is crafted with locally-sourced ingredients, every coffee bean is ethically traded, and every customer is treated like family.</p>
+                <div class="values">
+                    <div class="value-item">
+                        <h4>Quality First</h4>
+                        <p>Premium ingredients, no compromises</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Community Driven</h4>
+                        <p>Supporting local farmers & suppliers</p>
+                    </div>
+                    <div class="value-item">
+                        <h4>Passion Fueled</h4>
+                        <p>Every dish made with love</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Order or Inquire</h3>
+                    <p>Ready to taste the difference? Reach out for orders, catering, or just to say hello.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📞</span>
+                            <span>+256 700 123 456</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">✉️</span>
+                            <span>info@rubagafoods.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <span>Jinja, City Center</span>
+                        </div>
+                    </div>
+                </div>
+           <form class="contact-form" id="contactForm">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="tel" name="phone" placeholder="Phone Number">
+
+    <select name="subject">
+        <option>General Inquiry</option>
+        <option>Food Truck Booking</option>
+        <option>Catering Request</option>
+        <option>Feedback</option>
+    </select>
+
+    <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(this);
+
+    try {
+        const response = await fetch("send-email.php", {
+            method: "POST",
+            body: formData
+        });
+
+        if (response.ok) {
+            alert("Message sent successfully!");
+            this.reset();
+        } else {
+            throw new Error("Server error");
+        }
+
+    } catch (error) {
+        // 🔁 Fallback to mailto
+        const mailtoLink = `
+mailto:limitlessinc.2025@gmail.com
+?subject=${encodeURIComponent(formData.get("subject"))}
+&body=${encodeURIComponent(
+`Name: ${formData.get("name")}
+Email: ${formData.get("email")}
+Phone: ${formData.get("phone")}
+
+Message:
+${formData.get("message")}`
+)}`;
+
+        window.location.href = mailtoLink;
+    }
+});
+</script>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>RubagaFoods</h3>
+                    <p>Premium street cuisine, artisan coffee, and authentic pork delicacies.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#menu">Menu</a>
+                    <a href="#truck">Food Truck</a>
+                    <a href="#coffee">Coffee</a>
+                    <a href="#pork">Pork Joint</a>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-icon">IG</a>
+                        <a href="#" class="social-icon">FB</a>
+                        <a href="#" class="social-icon">TW</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 RubagaFoods. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
